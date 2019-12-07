@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <rosparam command="load" file="$(find process_kitti)/launch/read_lidar.yaml"/>
+
+  <!-- rviz node -->
+  <!-- <node name="visualizer" pkg="rviz" type="rviz" output="screen" respawn="false"/> -->
+
+  <!-- rosbag record node -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/00 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/01 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/02 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/03 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/04 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/05 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/06 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/07 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/08 /read_lidar/velodyne_points"/> -->
+  <!-- <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/09 /read_lidar/velodyne_points"/> -->
+  <node name="player" pkg="rosbag" type="record" output="screen" args="-O $(find process_kitti)/10 /read_lidar/velodyne_points"/>
+
+  <node name="read_lidar" pkg="process_kitti" type="read_lidar" output="screen" respawn="false"/>
+
+</launch>

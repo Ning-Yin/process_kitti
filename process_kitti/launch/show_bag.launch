@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <!-- rviz node -->
+  <node name="visualizer" pkg="rviz" type="rviz" output="screen" respawn="false"/>
+
+  <!-- rosbag record node -->
+  <!-- <node name="player" pkg="rosbag" type="play" output="screen" args=" -r 1 $(find process_kitti)/00.bag"/> -->
+  <node name="player" pkg="rosbag" type="play" output="screen" args=" -r 1 $(env HOME)/Velodyne-Lidar-ROS-Data/190222/2019-02-22-16-37-05.bag"/>
+
+</launch>

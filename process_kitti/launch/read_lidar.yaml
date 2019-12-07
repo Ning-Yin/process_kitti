@@ -1,0 +1,13 @@
+Lidar: {
+  # directory: "/home/yinning/kitti-lidar-dataset/00/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/01/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/02/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/03/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/04/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/05/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/06/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/07/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/08/velodyne",
+  # directory: "/home/yinning/kitti-lidar-dataset/09/velodyne",
+  directory: "/home/yinning/kitti-lidar-dataset/10/velodyne",
+}
